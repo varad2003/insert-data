@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3D6D6"
+    tools:context=".MainActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Card details"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:id="@+id/cardname"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_style"
+                android:hint=" Card Name" />
+
+            <EditText
+                android:id="@+id/apr"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_style"
+                android:hint="Enter APR" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="30dp"
+                >
+
+                <EditText
+                    android:id="@+id/minimum_age"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/edit_text_style"
+                    android:hint="Min Age"
+                    android:paddingRight="10dp"
+                    android:inputType="number"
+                    />
+
+                <EditText
+                    android:id="@+id/maximum_age"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/edit_text_style"
+                    android:hint="Max Age"
+                    android:paddingRight="10dp"
+                    android:inputType="number"
+                    />
+
+                <EditText
+                    android:id="@+id/income"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edit_text_style"
+                    android:hint="Minimum income" />
+
+
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nationality"
+                android:paddingTop="30dp"
+                android:textSize="20dp"
+                />
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:defaultFocusHighlightEnabled="true"
+                >
+
+                <RadioButton
+
+                    android:id="@+id/radiobtn1"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:text="Indian"
+                    android:textSize="20sp"
+                    />
+                <RadioButton
+                    android:id="@+id/radiobtn2"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:text="Non indian"
+                    android:textSize="20sp"
+                    />
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/nextbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:backgroundTint="#697DEA"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:text="Next"
+                 />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
